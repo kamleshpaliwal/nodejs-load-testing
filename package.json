@@ -1,0 +1,13 @@
+{
+  "name": "rest-api-loadtest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node demo-api/server.js",
+    "loadtest": "node src/cli.js",
+    "test": "node --test",
+    "report": "node src/report-cli.js"
+  },
+  "engines": { "node": ">=20" }
+}

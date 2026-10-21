@@ -1,0 +1,7 @@
+services:
+  demo-api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      DEMO_TEST_ENDPOINTS: "1"

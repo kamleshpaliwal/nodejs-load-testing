@@ -1,0 +1,22 @@
+{
+  "target": "http://127.0.0.1:3000",
+  "allowNonLocal": false,
+  "destructive": false,
+  "seed": 12345,
+  "scenarioRate": 5,
+  "concurrency": 10,
+  "requestTimeoutMs": 3000,
+  "durationSeconds": 5,
+  "warmupSeconds": 0,
+  "drainTimeoutMs": 5000,
+  "namespace": "loadtest",
+  "cleanup": true,
+  "slo": {
+    "p95LatencyMs": 1000,
+    "maxErrorRatePercent": 5,
+    "maxTimeoutRatePercent": 2,
+    "minScenariosPerSecond": 0,
+    "maxDroppedArrivalPercent": 10,
+    "minSamples": 1
+  }
+}
